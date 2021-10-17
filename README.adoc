@@ -1,0 +1,20 @@
+= GitHub Action for Luacheck
+
+== Usage
+
+All options need set in `.luacheckrc` at the root of the repository. See more in
+the link:https://luacheck.readthedocs.io/en/stable/[Configuration file].
+
+Example of the action:
+
+[source,yaml]
+----
+on: push
+jobs:
+    luacheck:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v2
+        - name: Luacheck Linter
+          uses: judaew/luacheck-action@v0.1.0-alpha
+----

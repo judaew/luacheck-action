@@ -1,0 +1,7 @@
+name: 'Luacheck Linter'
+author: 'Vadim-Valdis Yudaev'
+description: 'Run Luacheck Lint'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
