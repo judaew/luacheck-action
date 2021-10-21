@@ -9,7 +9,7 @@ LABEL "com.github.actions.description"="Run Luacheck Lint"
 LABEL "com.github.actions.icon"="activity"
 LABEL "com.github.actions.color"="gray-dark"
 
-RUN apk add --no-cache luarocks luacheck
+RUN apk add --no-cache bash luarocks luacheck
 RUN sh -s luarocks install lanes
 
 COPY entrypoint.sh /entrypoint.sh
