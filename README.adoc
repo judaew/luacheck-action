@@ -2,8 +2,8 @@
 
 == Usage
 
-All options need set in `.luacheckrc` at the root of the repository. See more in
-the link:https://luacheck.readthedocs.io/en/stable/[Configuration file].
+All options recommend set in `.luacheckrc` at the root of the repository. See
+more in the link:https://luacheck.readthedocs.io/en/stable/[Configuration file].
 
 Example of the action:
 
