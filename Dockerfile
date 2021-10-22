@@ -4,11 +4,6 @@ LABEL "repository"="http://github.com/judaew/luacheck-action"
 LABEL "homepage"="http://github.com/judaew/luacheck-action"
 LABEL "maintainer"="Vadim-Valdis Yudaev"
 
-LABEL "com.github.actions.name"="luacheck"
-LABEL "com.github.actions.description"="Run Luacheck Lint"
-LABEL "com.github.actions.icon"="activity"
-LABEL "com.github.actions.color"="gray-dark"
-
 RUN apk add --no-cache bash luarocks luacheck
 RUN sh -s luarocks install lanes
 

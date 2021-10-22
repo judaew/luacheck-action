@@ -2,6 +2,10 @@ name: 'Luacheck Linter'
 author: 'Vadim-Valdis Yudaev'
 description: 'Run Luacheck Lint'
 
+branding:
+  icon: 'activity'
+  color: 'gray-dark'
+
 inputs:
   args:
     description: |
