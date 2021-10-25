@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Luacheck Linter
-      uses: judaew/luacheck-action@v0.2.0
+      uses: judaew/luacheck-action@v0.2.1
       with:
         # [required]
         # Paths to lua files. If you want to lint multiple ansible files, use the
