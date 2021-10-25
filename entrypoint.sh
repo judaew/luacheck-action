@@ -183,8 +183,8 @@ parse_args() {
 }
 
 luacheck_init() {
+    : "${TARGETS?No targets to check. Nothing to do.}"
     : "${GITHUB_WORKSPACE?GITHUB_WORKSPACE has to be set. Did you use the actions/checkout action?}"
-    pushd "${GITHUB_WORKSPACE}"
 
     local opts
     opts=$(parse_args ${@} || exit 1)
