@@ -1,5 +1,5 @@
 name: 'Luacheck Linter'
-author: 'Vadim-Valdis Yudaev'
+author: 'Vadym-Valdis Yudaiev'
 description: 'Run Luacheck Lint'
 
 branding:
@@ -7,6 +7,12 @@ branding:
   color: 'gray-dark'
 
 inputs:
+  targets:
+    description: |
+      Paths to File(s) or Directory, separate by space if multiple files or
+      folders are specified.
+    required: false
+    default: "."
   args:
     description: |
       Arguments to be passed to the Luacheck
@@ -83,10 +89,6 @@ inputs:
 
         See more https://manpages.debian.org/testing/lua-check/luacheck.1.en.html
     required: false
-  targets:
-    description: |
-      Paths to lua files.
-    required: true
 
 runs:
   using: 'docker'
