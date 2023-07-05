@@ -191,7 +191,7 @@ luacheck_init() {
 
     # Enable recursive glob patterns, such as '**/*.lua'.
     shopt -s globstar
-    luacheck ${opts} "${TARGETS}"
+    luacheck "${TARGETS}" ${opts}
 }
 
 args=("${@}")
