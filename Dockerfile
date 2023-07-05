@@ -29,6 +29,7 @@ LABEL repository="http://github.com/judaew/luacheck-action"
 LABEL homepage="http://github.com/judaew/luacheck-action"
 LABEL maintainer="Vadym-Valdis Yudaiev"
 
+RUN apk add --no-cache bash
 COPY --from=build /usr/local /usr/local
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x entrypoint.sh
